@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Propuesta de diseño para una academia de trabajo remoto: formación digital, cursos y solicitud de información. Demostración de portafolio.">
+    <title>Aula Digital | Formación para el trabajo remoto · Demo</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
+    <div class="aviso-demo">Propuesta de diseño · Academia ficticia · Cursos y condiciones de ejemplo</div>
+    <header>
+        <nav class="contenedor navegacion" aria-label="Navegación principal">
+            <a class="marca" href="#inicio"><span class="marca-icono" aria-hidden="true">A</span> Aula Digital</a>
+            <div class="enlaces"><a href="#cursos">Cursos</a><a href="#beneficios">Cómo aprenderás</a><a class="boton pequeno" href="#contacto">Pedir información</a></div>
+        </nav>
+    </header>
+    <main id="contenido">
+        <section class="contenedor portada" id="inicio" aria-labelledby="titulo">
+            <div>
+                <p class="etiqueta">APRENDE · PRACTICA · AVANZA</p>
+                <h1>Tu próximo paso comienza con una <span>nueva habilidad.</span></h1>
+                <p class="intro">Explora habilidades digitales para prepararte para el trabajo remoto. Encuentra un punto de partida y empieza a construir tu propio camino.</p>
+                <div class="acciones"><a class="boton" href="#cursos">Explorar cursos</a><a class="enlace-texto" href="#contacto">Orientarme para empezar <span aria-hidden="true">↗</span></a></div>
+                <p class="nota">Catálogo ilustrativo para esta propuesta de diseño.</p>
+            </div>
+            <aside class="ruta" aria-labelledby="titulo-ruta">
+                <p class="etiqueta">UN PASO A LA VEZ</p>
+                <h2 id="titulo-ruta">Así empieza tu aprendizaje</h2>
+                <ol>
+                    <li><span class="numero" aria-hidden="true">01</span><div><h3>Encuentra tu punto de partida</h3><p>Explora los temas que te interesan.</p></div></li>
+                    <li><span class="numero" aria-hidden="true">02</span><div><h3>Lleva la teoría a la práctica</h3><p>Aprende haciendo ejercicios concretos.</p></div></li>
+                    <li><span class="numero" aria-hidden="true">03</span><div><h3>Construye algo propio</h3><p>Reúne lo aprendido en un proyecto.</p></div></li>
+                </ol>
+                <p class="ruta-pie">Empieza por una habilidad. Sigue a tu ritmo.</p>
+            </aside>
+        </section>
+        <section class="contenedor seccion" id="cursos" aria-labelledby="titulo-cursos">
+            <p class="etiqueta">ENCUENTRA TU PRÓXIMO PASO</p>
+            <h2 id="titulo-cursos">Habilidades que puedes empezar a construir</h2>
+            <p class="subtitulo">Tres ejemplos de cómo presentar el catálogo de la academia.</p>
+            <div class="lista-cursos">
+                <article class="curso"><span class="categoria">DESARROLLO WEB</span><h3>Tu primera página web</h3><p>Descubre cómo organizar contenido y darle diseño con HTML y CSS.</p><ul><li>Estructura y contenido</li><li>Diseño para celular</li><li>Proyecto de página personal</li></ul><p class="duracion">Nivel inicial · 4 semanas*</p><a href="#contacto" data-curso="Desarrollo web">Me interesa este curso <span aria-hidden="true">↗</span></a></article>
+                <article class="curso"><span class="categoria">PRODUCTIVIDAD</span><h3>Excel desde cero</h3><p>Transforma datos sueltos en información organizada y fácil de consultar.</p><ul><li>Tablas y organización</li><li>Fórmulas básicas</li><li>Ejercicio de control de tareas</li></ul><p class="duracion">Nivel inicial · 3 semanas*</p><a href="#contacto" data-curso="Excel">Me interesa este curso <span aria-hidden="true">↗</span></a></article>
+                <article class="curso"><span class="categoria">PROGRAMACIÓN</span><h3>Primeros pasos con JavaScript</h3><p>Añade interacciones a tus páginas y conoce la lógica de programación.</p><ul><li>Variables y decisiones</li><li>Botones y eventos</li><li>Proyecto interactivo sencillo</li></ul><p class="duracion">Nivel inicial · 5 semanas*</p><a href="#contacto" data-curso="JavaScript">Me interesa este curso <span aria-hidden="true">↗</span></a></article>
+            </div>
+            <p class="nota">*Temarios y duraciones de ejemplo. El catálogo final se adaptará a la oferta real de la academia.</p>
+        </section>
+        <section class="contenedor seccion" id="beneficios" aria-labelledby="titulo-beneficios">
+            <div class="beneficios"><div><p class="etiqueta">MENOS DUDAS, MÁS PRÁCTICA</p><h2 id="titulo-beneficios">Aprender puede empezar por algo pequeño.</h2><p>Esta propuesta pone el foco en una formación clara, práctica y progresiva.</p></div><ul><li><h3>Desde las bases</h3><p>Conceptos explicados paso a paso.</p></li><li><h3>Con ejercicios concretos</h3><p>Una oportunidad para aplicar cada tema.</p></li><li><h3>Con un resultado propio</h3><p>Un proyecto para reunir lo aprendido.</p></li></ul></div>
+        </section>
+        <section class="contenedor seccion contacto" id="contacto" aria-labelledby="titulo-contacto">
+            <div><p class="etiqueta">CONVERSEMOS SOBRE TU SIGUIENTE PASO</p><h2 id="titulo-contacto">Encuentra el curso que encaja contigo.</h2><p>Cuéntanos qué te interesa aprender. En la versión final, esta solicitud llegará al equipo de la academia.</p><p class="aviso-formulario" id="aviso-formulario"><strong>Formulario de demostración.</strong> No envía ni guarda datos. Usa información ficticia para probarlo.</p></div>
+            <form id="formulario" aria-describedby="aviso-formulario">
+                <label for="nombre">Tu nombre</label><input id="nombre" name="nombre" autocomplete="off" maxlength="80" placeholder="Nombre de ejemplo" required>
+                <label for="correo">Correo electrónico</label><input id="correo" name="correo" type="email" autocomplete="off" placeholder="ejemplo@example.com" required>
+                <label for="interes">¿Qué te gustaría aprender?</label><select id="interes" name="interes" required><option value="">Selecciona una opción</option><option>Desarrollo web</option><option>Excel</option><option>JavaScript</option><option>Necesito orientación</option></select>
+                <button class="boton" type="submit">Probar solicitud</button><p class="nota">Esta prueba no genera una inscripción ni un cobro.</p><p id="resultado" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+        <section class="contenedor seccion condiciones" aria-labelledby="titulo-condiciones">
+            <h2 id="titulo-condiciones">Información clara, desde el principio</h2>
+            <details><summary>Condiciones de esta demostración</summary><p>Aula Digital es una academia ficticia utilizada para presentar un diseño. Los cursos, duraciones y beneficios son ilustrativos. No se ofrecen matrículas, pagos ni certificados desde esta página.</p></details>
+            <details><summary>Condiciones propuestas para la versión final · Borrador</summary><p>Solicitar información no implica comprar ni reservar un cupo. Antes de la inscripción, la academia deberá confirmar el contenido, precio total, fechas, requisitos y condiciones de cancelación de cada curso.</p><p>La formación no implica una garantía de contratación o ingresos. Este texto es una propuesta pendiente de revisión y aprobación por la academia; no constituye sus condiciones definitivas.</p></details>
+            <details><summary>Privacidad del formulario de prueba</summary><p>Los datos escritos se utilizan únicamente para comprobar los campos en esta página. El formulario no los transmite ni los guarda. Antes de activar solicitudes reales, se deberá informar quién recibirá los datos, para qué se usarán y cómo contactar al responsable.</p></details>
+        </section>
+    </main>
+    <footer class="contenedor"><a class="marca" href="#inicio">Aula Digital</a><p>Propuesta de portafolio · Diseño para una academia de trabajo remoto</p><a href="#cursos">Volver a los cursos</a></footer>
+</body>
+</html>
